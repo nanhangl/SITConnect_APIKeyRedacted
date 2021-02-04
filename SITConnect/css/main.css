@@ -1,0 +1,126 @@
+﻿#MainContent_lbMemberRegistration, #MainContent_lbLogin {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 20px 0px;
+}
+
+.formRegistration, .formLogin, .formVerify, .formResend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#MainContent_lbRegistrationError, #MainContent_lbLoginError {
+    margin-bottom: 20px;
+}
+
+.formFieldGrp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.tbFormField {
+    width: 280px;
+    border: none;
+    outline: none;
+    background-color: #efefef;
+    height: 30px;
+}
+
+#MainContent_lbCreditCard {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 20px 0px;
+}
+
+#MainContent_btnRegister, #MainContent_btnLogin, #MainContent_btnReset {
+    width: 280px;
+}
+
+#MainContent_lbCardNumber {
+    margin-left: 6px;
+}
+
+.cardNumberGrp {
+    display: flex;
+    justify-content: space-evenly;
+    width: 292px;
+}
+
+.tbCardNumber {
+    width: 65px;
+    border: none;
+    outline: none;
+    background-color: #efefef;
+    height: 30px;
+    -moz-appearance: textfield;
+}
+
+.tbCardNumber::-webkit-outer-spin-button, .tbCardNumber::-webkit-inner-spin-button, #MainContent_tbCVV::-webkit-outer-spin-button, #MainContent_tbCVV::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.passComplexCheckFrame {
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.passComplexCheckFrame2 {
+    position: relative;
+    left: 300px;
+    top: 60px;
+    width: 0;
+    height: 0;
+}
+
+.passComplexCheck {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    width: 280px;
+    top: -150px;
+    left: -140px;
+    padding: 10px;
+}
+
+.passwordLength, .passwordUppercase, .passwordLowercase, .passwordDigit, .passwordSpecial {
+    margin-right: 5px;
+}
+
+.passwordNotMet {
+    color: #e50000;
+}
+
+.passwordMet {
+    color: #42dc00;
+}
+
+#changePasswordBackground {
+    width: 100vw !important;
+    height: 100vh !important;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#changePasswordModal {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+#closeChangePasswordModal {
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    position: relative;
+    top: -5px;
+}
