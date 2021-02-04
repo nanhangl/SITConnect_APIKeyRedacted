@@ -1,0 +1,1 @@
+﻿SELECT TOP 2 * FROM PasswordHistory WHERE AccountId = 17 ORDER BY SetDate DESC
