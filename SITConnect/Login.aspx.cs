@@ -195,7 +195,7 @@ namespace SITConnect
                     }
                     else
                     {
-                        lbLoginError.Text = $"Please verify your email (<a href='/ResendVerification?email={tbLoginEmail.Text}'>Resend Email</a>)";
+                        lbLoginError.Text = $"Please verify your email (<a href='/ResendVerification?email={System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode(tbLoginEmail.Text.Trim(), false)}'>Resend Email</a>)";
                         lbLoginError.ForeColor = System.Drawing.Color.Red;
                         lbLoginError.Visible = true;
                     }
